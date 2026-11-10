@@ -1,0 +1,64 @@
+/* === Современный CSS Reset === */
+
+/* 1. Box-sizing: чтобы padding не ломал ширину */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Убираем внешние отступы у всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Наследование шрифтов и плавная прокрутка */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* 4. Улучшения для медиа */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Убираем стандартные стили у форм */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* 6. Убираем анимации для тех, кто их не любит */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 7. Убираем маркеры у списков */
+ul, ol {
+  list-style: none;
+}
+
+/* 8. Ссылки */
+a {
+  color: inherit;
+  text-decoration: none;
+}
