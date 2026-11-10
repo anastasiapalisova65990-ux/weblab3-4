@@ -73,7 +73,7 @@ body {
     margin-top: 80px;             /* Компенсация высоты фиксированной шапки */
     background-image: 
         linear-gradient(rgba(230, 244, 250, 0.3), rgba(230, 244, 250, 0.3)),
-        url('images/Docteur-stetoscope-famille-mains-web.jpg');
+        url('Docteur-stetoscope-famille-mains-web.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
